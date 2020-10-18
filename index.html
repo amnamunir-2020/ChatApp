@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-App</title>
+    <!-- Firebase CONFIGURATION -->
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+<!-- Databse Service Used -->
+<script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-database.js"></script>
+
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBBhkh4FuE7rbN3MCg-5XPPXl1fDFRDh7M",
+    authDomain: "test-message-app-ccc0f.firebaseapp.com",
+    databaseURL: "https://test-message-app-ccc0f.firebaseio.com",
+    projectId: "test-message-app-ccc0f",
+    storageBucket: "test-message-app-ccc0f.appspot.com",
+    messagingSenderId: "651177401622",
+    appId: "1:651177401622:web:38a4540490f2c29d5b4437",
+    measurementId: "G-1535EK2PKY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+
+<form onsubmit="return sendMessage();">
+
+  <input id="message" placeholder="Enter Name" style="background-color: lightseagreen;color: black;"  autocomplete="off">
+  <input type="submit" style="background-color: green;" >
+</form>
+
+
+<!-- Create aLIST -->
+<ul id="messages" ></ul>
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
